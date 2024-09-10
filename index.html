@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <title>personal portfolio website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/d3d3f183dd.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href ="#header">Home</a></li>
+                    <li><a href ="#about">about</a></li>
+                    <li><a href ="#services">services</a></li>
+                    <li><a href ="#portfolio">portfolio</a></li>
+                    <li><a href ="#contact">contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+            
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>STUDENT</p>
+                <h1> Hi, I'm <span>Zaid</span><br>Jamal from Mumbai </h1>
+            </div>
+
+        </div>
+
+    </div>
+    <!------------------about----------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/cover.png.jpg" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-titlle">About Me</h1>
+                    <p> Hello! I'm Khan Zaid Jamal, currently embarking on an exciting journey as 
+                        a second-year student in the Bachelor of Engineering program with a 
+                        focus on Electronics and Computer Science at Anjuman I Islam Kalsekar
+                         Technical Campus, Panvel. My academic path began at Abdullah Patel
+                          English High School, Mumbra, where I completed my 12th grade and laid
+                           the foundation for my engineering aspirations.
+
+                        With a profound interest in the intersections of technology and innovation
+                        , I am passionate about exploring the realms of electronics and computer science. 
+                        My goal is to contribute meaningfully to the tech industry by harnessing my skills 
+                        and knowledge to tackle real-world challenges and drive technological advancements.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>C/C++</span><br> problem solving </li>
+                                <li><span>Html/CSS</span><br> Website designing</li>
+                                <li><span>management</span><br> projects</li>
+                                
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>internship</span><br> codsoft internship </li>
+                                
+                                
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>2023 [12TH]</span><br> abdullah patel english high school </li>
+                                <li><span>2023-2027</span><br> AIKTC</li>
+                                
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------------------services------>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-titlle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-web-awesome"></i>
+                    <h2>Web Design</h2>
+                    <p>Skilled in web design, crafting visually engaging and user-friendly websites 
+                        tailored to your brand's needs.</p>
+                         <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Canva</h2>
+                    <p>Expert in Canva design, transforming ideas into visually stunning
+                         graphics with ease and creativity.</p>
+                         <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>C/C++</h2>
+                    <p>Proficient in C and C++ programming, offering robust and efficient coding solutions.</p>
+                         <a href="#">Learn more</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--------------portfolio-------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-titlle">  Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/calculator.png">
+                    <div class="layer">
+                        <h3> basic calculator</h3>
+                        <p>A basic calculator in C performs simple arithmetic operations like
+                             addition, subtraction, multiplication, and division based on user inpu</p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/game.png.jpg">
+                    <div class="layer">
+                        <h3> Tic-Tac-Toe game</h3>
+                        <p>A Tic Tac Toe game is a two-player strategy game where players alternately mark a 
+                            3x3 grid to achieve three of their symbols in a row, either horizontally, vertically, 
+                            or diagonally</p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div><div class="work">
+                    <img src="images/taskmanager.png">
+                    <div class="layer">
+                        <h3> To-Do-List manager</h3>
+                        <p>A to-do list manager helps users organize, track, and prioritize tasks and 
+                            activities efficiently</p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+
+        </div>
+    </div>
+
+<!---------------contact------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title"> Contact me </h1>
+                <p><i class="fa-solid fa-paper-plane"></i> khanzaidjamal@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 8591484058</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i>
+                        <a href="https://twitter.com/"><i class="fa-brands fa-twitter-square"></i>
+                            <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i>
+                                <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+                <a href="images/Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Nmae" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p> Please don’t hesitate to reach out; I would love to connect with you and explore opportunities together.<i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+
+
+<script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyI1EfPWNLvzAnv-AhkeqJjy4LC_zvW3Af0ms2R9X73wQjwFLrop8BD7z9oFoAc1sI/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "MESSAGE SENT SUCCESSFULLY"
+                setTimeout(function(){
+                    msg.innerHTML =""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    </body>
+</html>
